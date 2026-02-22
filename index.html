@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO_COOL // Night City Netrunners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
+    <div class="chromatic-aberration"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="glitch" data-text="ZERO_COOL">ZERO_COOL</span>
+            <span class="status">[STATUS: WANTED]</span>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#street">// STREET</a></li>
+            <li><a href="#crew">// CREW</a></li>
+            <li><a href="#run">// THE_RUN</a></li>
+            <li><a href="#link">// LINK_UP</a></li>
+        </ul>
+    </nav>
+
+    <section id="street" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="corruption-text">
+                <span class="corrupt-line">SYSTEM_FAILURE</span>
+                <span class="corrupt-line">CORPORATE_LIES</span>
+                <span class="corrupt-line">STREET_TRUTH</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line" data-text="NIGHT CITY">NIGHT CITY</span>
+                <span class="title-line accent" data-text="EATS">EATS</span>
+                <span class="title-line" data-text="THE_WEAK">THE WEAK</span>
+            </h1>
+            <p class="hero-subtitle">You got two choices, choom:</p>
+            <p class="hero-text typing-container">
+                <span class="typeline">Get chewed up by the corps...</span>
+                <span class="typeline delay">Or run with us and make them bleed.</span>
+            </p>
+            <a href="#link" class="btn-join">
+                <span class="btn-text">JACK_IN</span>
+                <span class="btn-particles"></span>
+            </a>
+        </div>
+        <div class="terminal-bg" id="terminal"></div>
+    </section>
+
+    <section id="crew" class="crew">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-glitch" data-text="// THE_CREW">// THE_CREW</span>
+            </h2>
+            <p class="section-intro">We ain't a corporation. We ain't a gang in the traditional sense. We're the ghosts in the machine.</p>
+
+            <div class="crew-grid">
+                <div class="crew-card">
+                    <div class="card-glitch"></div>
+                    <div class="card-header">
+                        <span class="role-icon">&#128187;</span>
+                        <h3>NETRUNNERS</h3>
+                    </div>
+                    <p class="card-desc">We hit from the shadows. Corporate servers bleed data while you sleep in a coffin apartment.</p>
+                    <ul class="card-skills">
+                        <li>ICE breaking</li>
+                        <li>Neural infiltration</li>
+                        <li>Data heists</li>
+                    </ul>
+                </div>
+
+                <div class="crew-card">
+                    <div class="card-glitch"></div>
+                    <div class="card-header">
+                        <span class="role-icon">&#9881;</span>
+                        <h3>TECHIES</h3>
+                    </div>
+                    <p class="card-desc">Gear doesn't make the runner - but good gear makes dead corps. We build, we mod, we survive.</p>
+                    <ul class="card-skills">
+                        <li>Cyberdeck builds</li>
+                        <li>Black market mods</li>
+                        <li>Signal encryption</li>
+                    </ul>
+                </div>
+
+                <div class="crew-card">
+                    <div class="card-glitch"></div>
+                    <div class="card-header">
+                        <span class="role-icon">&#128065;</span>
+                        <h3>LOOKOUTS</h3>
+                    </div>
+                    <p class="card-desc">Every crew needs eyes. You watch the streets, track the corpos, keep us alive.</p>
+                    <ul class="card-skills">
+                        <li>Surveillance</li>
+                        <li>Intel gathering</li>
+                        <li>Counter-ops</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="run" class="run">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-glitch" data-text="// THE_STREETS">// THE_STREETS</span>
+            </h2>
+
+            <div class="run-content">
+                <div class="run-text">
+                    <p><span class="highlight">Night City doesn't care about you.</span> Arasaka, Militech, Biotechnica - they'll use your brain until it fries, then dump your body in a gutter in Heywood.</p>
+                    <p>We run different. We hit the corps that think they own us. We steal their data, expose their crimes, and fund the resistance.</p>
+                    <p class="warning-text">WARNING: This life ain't safe. You join us, you're marked. But you'll be free.</p>
+                </div>
+
+                <div class="stats-board">
+                    <h4>// CREW_STATUS</h4>
+                    <div class="stat-row">
+                        <span>Active Runners:</span>
+                        <span class="stat-value" data-count="47">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Corps Hit:</span>
+                        <span class="stat-value" data-count="12">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Data Leaked:</span>
+                        <span class="stat-value">2.4 TB</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Crew Lost:</span>
+                        <span class="stat-value danger" data-count="3">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="link" class="link">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-glitch" data-text="// ESTABLISH_LINK">// ESTABLISH_LINK</span>
+            </h2>
+
+            <div class="link-wrapper">
+                <div class="link-info">
+                    <p class="link-warning">ENCRYPTED CHANNEL ONLY</p>
+                    <p>Use a burner. Use a proxy. Don't use anything traceable to you.</p>
+                    <p>We'll verify, then we'll meet. Come correct or don't come at all.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-header">
+                        <span>// SECURE_TRANSMISSION</span>
+                        <div class="encryption-status">
+                            <span class="status-dot"></span>
+                            <span>ENCRYPTED</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="handle">STREET HANDLE</label>
+                        <input type="text" id="handle" name="handle" placeholder="What do they call you in the streets?" autocomplete="off" required>
+                        <div class="input-glitch"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">AGE</label>
+                        <input type="number" id="age" name="age" placeholder="Years on this rock" min="16" max="60" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skill">PRIMARY SKILL</label>
+                        <select id="skill" name="skill" required>
+                            <option value="">-- SELECT --</option>
+                            <option value="netrunning">Netrunning / Hacking</option>
+                            <option value="tech">Tech / Engineering</option>
+                            <option value="intel">Intel / Surveillance</option>
+                            <option value="combat">Combat / Security</option>
+                            <option value="other">Other (specify below)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">WHY YOU WANT IN</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us why you're ready to run..." required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <span>I understand this life ain't safe. I'm ready to run.</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-join btn-submit">
+                        <span class="btn-text">SEND_ENCRYPTED</span>
+                        <span class="btn-particles"></span>
+                    </button>
+
+                    <div class="form-footer">
+                        <span>// TRANSMISSION WILL BE TRACED FOR 3.2 SECONDS</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-tagline">ZERO_COOL // <span class="glitch-small" data-text="NIGHT_CITY_LEGIS">NIGHT_CITY_LEGIS</span></p>
+            <p class="footer-location">Operating in: Watson // Westbrook // Heywood // Santo Domingo // Pacifica</p>
+            <p class="footer-disclaimer">This ain't a game. This is survival.</p>
+            <p class="footer-copyright">&copy; 2077 ZERO_COOL Collective | Stay sharp. Stay hidden.</p>
+        </div>
+    </footer>
+
+    <div class="overlay-message" id="overlayMessage">
+        <div class="message-content">
+            <h2>// TRANSMISSION_RECEIVED</h2>
+            <p>We'll find you if you're real. Stay safe, choom.</p>
+            <button class="btn-join" onclick="closeOverlay()">ACKNOWLEDGE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
