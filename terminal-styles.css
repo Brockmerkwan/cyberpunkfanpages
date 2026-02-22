@@ -1,0 +1,321 @@
+/* ===== TERMINAL STYLES ===== */
+
+.terminal-section {
+    min-height: 100vh;
+    padding: 5rem 2rem 2rem;
+    background: var(--bg-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terminal-container {
+    width: 100%;
+    max-width: 900px;
+    background: var(--bg-panel);
+    border: 2px solid var(--terminal-green);
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(10, 255, 10, 0.2);
+    overflow: hidden;
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--terminal-green);
+}
+
+.terminal-title {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: var(--terminal-green);
+    letter-spacing: 1px;
+}
+
+.terminal-title .blink {
+    animation: blink 1s infinite;
+    margin-right: 0.5rem;
+}
+
+.terminal-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--terminal-green);
+    letter-spacing: 1px;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    background: var(--terminal-green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 5px var(--terminal-green); }
+    50% { opacity: 0.5; box-shadow: 0 0 2px var(--terminal-green); }
+}
+
+.terminal-body {
+    height: 500px;
+    overflow-y: auto;
+    padding: 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+.terminal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+    background: var(--bg-black);
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+    background: var(--terminal-green);
+    border-radius: 4px;
+}
+
+.output-line {
+    margin-bottom: 0.5rem;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.output-line.welcome {
+    color: var(--terminal-green);
+    margin-bottom: 1rem;
+}
+
+.output-line.system {
+    color: var(--text-dim);
+}
+
+.output-line.error {
+    color: var(--neon-pink);
+}
+
+.output-line.success {
+    color: var(--terminal-green);
+}
+
+.output-line.info {
+    color: var(--neon-cyan);
+}
+
+.output-line.warning {
+    color: var(--amber);
+}
+
+.output-line .timestamp {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+.terminal-input-line {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-dark);
+    border-top: 1px solid var(--terminal-green);
+}
+
+.prompt {
+    color: var(--neon-cyan);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    white-space: nowrap;
+}
+
+.terminal-input-line input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.cursor {
+    color: var(--terminal-green);
+    animation: blink 1s infinite;
+    margin-left: 0.5rem;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+/* Terminal Help Panel */
+.terminal-help {
+    max-width: 900px;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--bg-panel);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.terminal-help h3 {
+    color: var(--neon-cyan);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.command-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.command-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: var(--bg-dark);
+    border-left: 2px solid var(--terminal-green);
+}
+
+.command-item .cmd {
+    color: var(--terminal-green);
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+}
+
+.command-item .desc {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+}
+
+.terminal-tip {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+/* Command Output Styles */
+.command-output {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--bg-dark);
+    border-left: 3px solid var(--neon-cyan);
+}
+
+.command-output h4 {
+    color: var(--neon-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.command-output ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.command-output li {
+    padding: 0.3rem 0;
+    color: var(--text-dim);
+}
+
+.command-output li::before {
+    content: '> ';
+    color: var(--terminal-green);
+}
+
+/* Runner Card in Terminal */
+.runner-card {
+    display: inline-block;
+    background: var(--bg-dark);
+    border: 1px solid var(--neon-purple);
+    padding: 1rem;
+    margin: 0.5rem;
+    min-width: 200px;
+}
+
+.runner-card .name {
+    color: var(--neon-cyan);
+    font-weight: bold;
+}
+
+.runner-card .role {
+    color: var(--neon-purple);
+    font-size: 0.8rem;
+}
+
+.runner-card .status {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+.runner-card .status.active {
+    color: var(--terminal-green);
+}
+
+/* Bounty Table */
+.bounty-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5rem 0;
+}
+
+.bounty-table th,
+.bounty-table td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bounty-table th {
+    color: var(--neon-pink);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.bounty-table td {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+.bounty-table .amount {
+    color: var(--amber);
+}
+
+/* ASCII Art */
+.ascii-art {
+    font-size: 0.6rem;
+    line-height: 1.2;
+    color: var(--neon-cyan);
+    white-space: pre;
+    overflow-x: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .terminal-body {
+        height: 350px;
+    }
+
+    .command-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .terminal-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}

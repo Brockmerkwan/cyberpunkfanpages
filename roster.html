@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO_COOL // Crew Roster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="roster-styles.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <span class="glitch" data-text="ZERO_COOL">ZERO_COOL</span>
+                <span class="status">[CREW DATABASE]</span>
+            </a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">// HOME</a></li>
+            <li><a href="lore.html">// LORE</a></li>
+            <li><a href="roster.html" class="active">// ROSTER</a></li>
+            <li><a href="terminal.html">// TERMINAL</a></li>
+            <li><a href="hack-game.html">// ICE_BREAKER</a></li>
+        </ul>
+    </nav>
+
+    <section class="roster-hero">
+        <div class="hero-content">
+            <h1 class="roster-title" data-text="CREW_ROSTER">CREW_ROSTER</h1>
+            <p class="roster-subtitle">47 Active Runners. 3 Missing. 1 Legend.</p>
+        </div>
+    </section>
+
+    <section class="roster-section">
+        <div class="container">
+            <div class="roster-filters">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="triad">TRIAD</button>
+                <button class="filter-btn" data-filter="active">ACTIVE</button>
+                <button class="filter-btn" data-filter="missing">MISSING/MIA</button>
+            </div>
+
+            <div class="roster-grid" id="rosterGrid">
+                <!-- Triad -->
+                <div class="roster-card triad" data-category="triad missing">
+                    <div class="card-header">
+                        <div class="avatar">
+                            <span class="avatar-icon">👁️</span>
+                        </div>
+                        <div class="card-badges">
+                            <span class="badge founder">FOUNDER</span>
+                            <span class="badge status-missing">MISSING</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="runner-name">ZERO</h3>
+                        <p class="runner-real">Marcus Chen</p>
+                        <p class="runner-role">Netrunner // Legend</p>
+                        <div class="card-divider"></div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-label">CORPS HIT</span>
+                                <span class="stat-value">12</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">DATA LEAKED</span>
+                                <span class="stat-value">47 TB</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProfile(this)">
+                            <span>ACCESS FILE</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expanded-content">
+                            <p class="bio">
+                                Founded ZERO_COOL in 2074 after discovering Arasaka's Project: Ghostwalker.
+                                Disappeared in late 2076 under mysterious circumstances. Some say he's merged
+                                with an AI beyond the Blackwall. Others say he's planning the ultimate strike.
+                            </p>
+                            <div class="cyberware-list">
+                                <h4>CYBERWARE:</h4>
+                                <ul>
+                                    <li>Kiroshi "Ghost" Optics (Custom)</li>
+                                    <li>Neural Link Processor (Arasaka Black ICE)</li>
+                                    <li>Subdermal Data Ports (Encrypted)</li>
+                                </ul>
+                            </div>
+                            <p class="quote">"They made me a ghost. Now I haunt their dreams."</p>
+                            <p class="last-seen"><strong>LAST SEEN:</strong> Arasaka Tower, Floor 147+ (Unconfirmed)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roster-card triad" data-category="triad active">
+                    <div class="card-header">
+                        <div class="avatar">
+                            <span class="avatar-icon">⚡</span>
+                        </div>
+                        <div class="card-badges">
+                            <span class="badge leader">FIELD COMMANDER</span>
+                            <span class="badge status-active">ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="runner-name">GLITCH</h3>
+                        <p class="runner-real">[REDACTED]</p>
+                        <p class="runner-role">Combat Netrunner</p>
+                        <div class="card-divider"></div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-label">CONFIRMED KILLS</span>
+                                <span class="stat-value">23</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">BOUNTY</span>
+                                <span class="stat-value">€$250K</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProfile(this)">
+                            <span>ACCESS FILE</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expanded-content">
+                            <p class="bio">
+                                Ex-Tyger Claw defector. Killed three of her old crew when they tried to force
+                                her into BD trafficking. Now leads field operations with cold precision.
+                                Protective of young runners - lost too many already.
+                            </p>
+                            <div class="cyberware-list">
+                                <h4>CYBERWARE:</h4>
+                                <ul>
+                                    <li>Sandevistan Neural Processor</li>
+                                    <li>Subdermal Armor Plating</li>
+                                    <li>Reflex Booster (Military Grade)</li>
+                                </ul>
+                            </div>
+                            <p class="quote">"You join us, you're family. You betray family, I end you. Simple."</p>
+                            <p class="last-seen"><strong>LAST SEEN:</strong> Northside Watson Safe House</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roster-card triad" data-category="triad active">
+                    <div class="card-header">
+                        <div class="avatar">
+                            <span class="avatar-icon">🌙</span>
+                        </div>
+                        <div class="card-badges">
+                            <span class="badge tech">TECH/INTEL</span>
+                            <span class="badge status-active">ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="runner-name">MOONSHADOW</h3>
+                        <p class="runner-real">Yuki Tanaka</p>
+                        <p class="runner-role">Intel Coordinator</p>
+                        <div class="card-divider"></div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-label">SAFE HOUSES</span>
+                                <span class="stat-value">12</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">KIDS SAVED</span>
+                                <span class="stat-value">89</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProfile(this)">
+                            <span>ACCESS FILE</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expanded-content">
+                            <p class="bio">
+                                Former Arasaka accountant who discovered embezzlement leading to human trafficking.
+                                Faked her death and joined ZC. Runs the "adoption" program for street kids.
+                                The heart of the crew - keeps everyone human.
+                            </p>
+                            <div class="cyberware-list">
+                                <h4>CYBERWARE:</h4>
+                                <ul>
+                                    <li>Audio Processor (Full Spectrum)</li>
+                                    <li>Memory Implants (10TB)</li>
+                                    <li>Voice Modulator</li>
+                                </ul>
+                            </div>
+                            <p class="quote">"Every kid on the street is someone's child. We're the ones who remember."</p>
+                            <p class="last-seen"><strong>LAST SEEN:</strong> Kabuki Safe House</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Runners -->
+                <div class="roster-card" data-category="active">
+                    <div class="card-header">
+                        <div class="avatar">
+                            <span class="avatar-icon">👻</span>
+                        </div>
+                        <div class="card-badges">
+                            <span class="badge netrunner">NETRUNNER</span>
+                            <span class="badge status-active">ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="runner-name">ECHO</h3>
+                        <p class="runner-real">[UNKNOWN]</p>
+                        <p class="runner-role">Deep Net Specialist</p>
+                        <div class="card-divider"></div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-label">BLACKWALL DIVES</span>
+                                <span class="stat-value">7</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">HUMANITY</span>
+                                <span class="stat-value">??%</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProfile(this)">
+                            <span>ACCESS FILE</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expanded-content">
+                            <p class="bio">
+                                Made contact with something beyond the Blackwall in 2076. Returned... changed.
+                                Speaks in code and riddles. Sometimes responds to questions before they're asked.
+                                Keeps a list of names - people who've been "taken" by the Blackwall.
+                            </p>
+                            <div class="cyberware-list">
+                                <h4>CYBERWARE:</h4>
+                                <ul>
+                                    <li>Unknown (Possibly Non-Human)</li>
+                                    <li>Neural Link (Blackwall Modified)</li>
+                                    <li>[DATA CORRUPTED]</li>
+                                </ul>
+                            </div>
+                            <p class="quote">"They're singing. Do you hear them? The ones behind the wall. They're so lonely."</p>
+                            <p class="last-seen"><strong>LAST SEEN:</strong> Cyberspace (Location Unknown)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roster-card" data-category="active">
+                    <div class="card-header">
+                        <div class="avatar">
+                            <span class="avatar-icon">🗡️</span>
+                        </div>
+                        <div class="card-badges">
+                            <span class="badge combat">COMBAT</span>
+                            <span class="badge status-active">ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="runner-name">RAZOR</h3>
+                        <p class="runner-real">Diego Morales</p>
+                        <p class="runner-role">Street Operator</p>
+                        <div class="card-divider"></div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-label">MANTIS BLADES</span>
+                                <span class="stat-value">YES</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">AGE</span>
+                                <span class="stat-value">22</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProfile(this)">
+                            <span>ACCESS FILE</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expanded-content">
+                            <p class="bio">
+                                Found by ZC at 16, running from Scavengers. Now one of their best hitters.
+                                Doesn't hack - cuts. Works just as well. Hot-headed but fiercely loyal.
+                                Protects new recruits like they're family.
+                            </p>
+                            <div class="cyberware-list">
+                                <h4>CYBERWARE:</h4>
+                                <ul>
+                                    <li>Mantis Blades (Military Grade)</li>
+                                    <li>Reinforced Skeleton</li>
+                                    <li>Reflex Tuner</li>
+                                </ul>
+                            </div>
+                            <p class="quote">"I don't hack. I cut. Works just as well."</p>
+                            <p class="last-seen"><strong>LAST SEEN:</strong> Watson Streets</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roster-card" data-category="active">
+                    <div class="card-header">
+                        <div class="avatar">
+                            <span class="avatar-icon">📡</span>
+                        </div>
+                        <div class="card-badges">
+                            <span class="badge tech">COMMS</span>
+                            <span class="badge status-active">ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="runner-name">STATIC</h3>
+                        <p class="runner-real">[REDACTED]</p>
+                        <p class="runner-role">Communications</p>
+                        <div class="card-divider"></div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-label">TRANSMISSIONS</span>
+                                <span class="stat-value">1,847</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">AGE</span>
+                                <span class="stat-value">19</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProfile(this)">
+                            <span>ACCESS FILE</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expanded-content">
+                            <p class="bio">
+                                Parents were journalists killed investigating Arasaka. Inherited their notes
+                                and joined ZC to finish their work. Rarely speaks above a whisper. Can hear
+                                frequencies no human should detect.
+                            </p>
+                            <div class="cyberware-list">
+                                <h4>CYBERWARE:</h4>
+                                <ul>
+                                    <li>Audio Disruptors</li>
+                                    <li>Voice Modulator</li>
+                                    <li>Signal Amplifier (Custom)</li>
+                                </ul>
+                            </div>
+                            <p class="quote">"The truth is out there. We just have to broadcast it loud enough."</p>
+                            <p class="last-seen"><strong>LAST SEEN:</strong> Mobile (Encrypted)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Missing/MIA -->
+                <div class="roster-card memorial" data-category="missing">
+                    <div class="card-header">
+                        <div class="avatar">
+                            <span class="avatar-icon">🔀</span>
+                        </div>
+                        <div class="card-badges">
+                            <span class="badge runner">RUNNER</span>
+                            <span class="badge status-mia">MIA</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="runner-name">SWITCH</h3>
+                        <p class="runner-real">[UNKNOWN]</p>
+                        <p class="runner-role">Netrunner</p>
+                        <div class="card-divider"></div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-label">MISSING SINCE</span>
+                                <span class="stat-value">2075</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">LOCATION</span>
+                                <span class="stat-value">MAELSTROM</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProfile(this)">
+                            <span>ACCESS FILE</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expanded-content">
+                            <p class="bio">
+                                Captured by Maelstrom during the Night Market Incident (2075).
+                                Presumed cyberpsychotically converted. ZC still searching.
+                                We don't leave our own behind.
+                            </p>
+                            <div class="memorial-note">
+                                <p class="warning">⚠️ SEARCH ONGOING</p>
+                                <p>If you have information on Switch's whereabouts, contact Moonshadow immediately.</p>
+                            </div>
+                            <p class="quote">"Tell my partner... we're coming."</p>
+                            <p class="last-seen"><strong>LAST SEEN:</strong> Night Market, Watson (2075)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roster-card memorial" data-category="missing">
+                    <div class="card-header">
+                        <div class="avatar">
+                            <span class="avatar-icon">💠</span>
+                        </div>
+                        <div class="card-badges">
+                            <span class="badge runner">RUNNER</span>
+                            <span class="badge status-mia">MIA</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="runner-name">NEON</h3>
+                        <p class="runner-real">[UNKNOWN]</p>
+                        <p class="runner-role">Netrunner</p>
+                        <div class="card-divider"></div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-label">MISSING SINCE</span>
+                                <span class="stat-value">2075</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">SISTER</span>
+                                <span class="stat-value">THE MOX</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProfile(this)">
+                            <span>ACCESS FILE</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expanded-content">
+                            <p class="bio">
+                                Switch's partner. Captured same night at Night Market.
+                                Last transmission: "Tell my sister I—" [SIGNAL LOST]
+                                Sister now runs with The Mox, still searching.
+                            </p>
+                            <div class="memorial-note">
+                                <p class="warning">⚠️ SEARCH ONGOING</p>
+                                <p>Sister's location: Lizzie's Bar, Watson. She pays for any info on Neon.</p>
+                            </div>
+                            <p class="quote">"Tell my sister I—"</p>
+                            <p class="last-seen"><strong>LAST SEEN:</strong> Night Market, Watson (2075)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-tagline">ZERO_COOL // <span class="glitch-small" data-text="NIGHT_CITY_LEGIS">NIGHT_CITY_LEGIS</span></p>
+            <p class="footer-location">Operating in: Watson // Westbrook // Heywood // Santo Domingo // Pacifica</p>
+            <p class="footer-disclaimer">This ain't a game. This is survival.</p>
+            <p class="footer-copyright">&copy; 2077 ZERO_COOL Collective | Stay sharp. Stay hidden.</p>
+        </div>
+    </footer>
+
+    <script src="roster.js"></script>
+</body>
+</html>

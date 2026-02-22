@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO_COOL // Secure Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="terminal-styles.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <span class="glitch" data-text="ZERO_COOL">ZERO_COOL</span>
+                <span class="status">[SECURE TERMINAL]</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">// HOME</a></li>
+            <li><a href="lore.html">// LORE</a></li>
+            <li><a href="hack-game.html">// ICE_BREAKER</a></li>
+        </ul>
+    </nav>
+
+    <section class="terminal-section">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-title">
+                    <span class="blink">█</span> ZERO_COOL SECURE TERMINAL v3.77
+                </div>
+                <div class="terminal-status">
+                    <span class="status-indicator"></span>
+                    ENCRYPTED CONNECTION
+                </div>
+            </div>
+
+            <div class="terminal-body" id="terminalBody">
+                <div class="output-line welcome">
+                    ╔═══════════════════════════════════════════════════════════╗
+                    ║                                                           ║
+                    ║   ZERO_COOL SECURE TERMINAL // ENCRYPTED CHANNEL ACTIVE   ║
+                    ║                                                           ║
+                    ║   Type 'help' for available commands.                     ║
+                    ║   Type 'clear' to clear the terminal.                     ║
+                    ║                                                           ║
+                    ╚═══════════════════════════════════════════════════════════╝
+                </div>
+                <div class="output-line">
+                    <span class="timestamp">[2077-02-22 03:33:77]</span>
+                    Connection established. Welcome, runner.
+                </div>
+                <div class="output-line system">
+                    > SYSTEM CHECK: All networks operational
+                </div>
+                <div class="output-line system">
+                    > TRACE PROTECTION: Active
+                </div>
+                <div class="output-line system">
+                    > LAST LOGIN: Never (First time?)
+                </div>
+            </div>
+
+            <div class="terminal-input-line">
+                <span class="prompt">runner@zero_cool:~$</span>
+                <input type="text" id="terminalInput" autocomplete="off" spellcheck="false" autofocus>
+                <span class="cursor">█</span>
+            </div>
+        </div>
+
+        <div class="terminal-help">
+            <h3>// AVAILABLE COMMANDS</h3>
+            <div class="command-grid">
+                <div class="command-item">
+                    <span class="cmd">help</span>
+                    <span class="desc">Show this help</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">about</span>
+                    <span class="desc">Crew information</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">runners</span>
+                    <span class="desc">List active runners</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">lore</span>
+                    <span class="desc">Access crew history</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">ops</span>
+                    <span class="desc">Recent operations</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">bounty</span>
+                    <span class="desc">Wanted listings</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">contact</span>
+                    <span class="desc">Encrypted contact</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">clear</span>
+                    <span class="desc">Clear terminal</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">date</span>
+                    <span class="desc">Show system time</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">echo [msg]</span>
+                    <span class="desc">Echo a message</span>
+                </div>
+            </div>
+            <p class="terminal-tip">TIP: Press TAB for autocomplete, ↑↓ for history</p>
+        </div>
+    </section>
+
+    <script src="terminal.js"></script>
+</body>
+</html>
