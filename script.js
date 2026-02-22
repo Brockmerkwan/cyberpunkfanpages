@@ -214,20 +214,6 @@ revealElements.forEach(el => {
     revealObserver.observe(el);
 });
 
-// ===== RANDOM GLITCH EVENTS =====
-function randomGlitch() {
-    document.body.style.filter = 'hue-rotate(90deg) contrast(1.2)';
-    setTimeout(() => {
-        document.body.style.filter = '';
-    }, 100);
-
-    // Schedule next glitch
-    setTimeout(randomGlitch, Math.random() * 30000 + 10000);
-}
-
-// Start random glitches after 5 seconds
-setTimeout(randomGlitch, 5000);
-
 // ===== CONSOLE EASTER EGG =====
 console.log(`
     ╔═══════════════════════════════════════╗
