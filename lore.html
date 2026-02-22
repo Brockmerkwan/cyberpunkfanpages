@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO_COOL // Crew Lore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lore-styles.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <span class="glitch" data-text="ZERO_COOL">ZERO_COOL</span>
+                <span class="status">[STATUS: WANTED]</span>
+            </a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">// HOME</a></li>
+            <li><a href="lore.html" class="active">// LORE</a></li>
+            <li><a href="index.html#crew">// CREW</a></li>
+            <li><a href="index.html#link">// LINK_UP</a></li>
+        </ul>
+    </nav>
+
+    <section class="lore-hero">
+        <div class="hero-content">
+            <h1 class="lore-title" data-text="THE_TRUTH">THE TRUTH</h1>
+            <p class="lore-subtitle">Behind the symbol. Beyond the Blackwall.</p>
+        </div>
+    </section>
+
+    <section class="origin-section">
+        <div class="container">
+            <div class="origin-grid">
+                <div class="origin-symbol">
+                    <div class="symbol-display">
+                        <svg viewBox="0 0 200 200" class="zc-symbol">
+                            <!-- Three eyes triangle -->
+                            <circle cx="100" cy="60" r="8" fill="#00ffff" class="eye eye-1">
+                                <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="60" cy="130" r="8" fill="#00ffff" class="eye eye-2">
+                                <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="140" cy="130" r="8" fill="#00ffff" class="eye eye-3">
+                                <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Broken circle (Blackwall) -->
+                            <circle cx="100" cy="100" r="70" fill="none" stroke="#bc13fe" stroke-width="3"
+                                    stroke-dasharray="100 330" class="blackwall-ring">
+                                <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="20s" repeatCount="indefinite"/>
+                            </circle>
+                            <!-- ZC insignia -->
+                            <text x="100" y="110" text-anchor="middle" fill="#ff003c" font-size="24" font-family="monospace" font-weight="bold">ZC</text>
+                        </svg>
+                    </div>
+                    <p class="symbol-meaning">Three eyes watch. The Blackwall breaks. Zero Cool endures.</p>
+                </div>
+
+                <div class="origin-story">
+                    <h2 class="section-header">// ORIGINS</h2>
+                    <div class="story-content">
+                        <p class="highlight-first">
+                            In 2074, Marcus "Zero" Chen discovered something he wasn't supposed to.
+                            As an Arasaka netrunner, he had access to black ops files most could only dream of.
+                            What he found was <span class="glitch-text" data-text="Project: Ghostwalker">Project: Ghostwalker</span> —
+                            human experimentation to create human-AI hybrids.
+                        </p>
+                        <p>
+                            When Marcus tried to expose it, Arasaka burned him. Officially, he died in a "netrunning accident."
+                            Unofficially, he disappeared into Watson with blood in his eyes and revenge in his heart.
+                        </p>
+                        <p>
+                            Six months later, every public terminal in Northside Watson displayed the same message:
+                        </p>
+                        <div class="terminal-message">
+                            > SYSTEM COMPROMISED<br>
+                            > TRUTH UPLOADED<br>
+                            > ZERO_COOL IS WATCHING
+                        </div>
+                        <p>
+                            The first data dump exposed Arasaka's human experimentation. Thousands of eddies worth of
+                            corpo secrets flooded the Net. Marcus never showed his face, but recruits came anyway —
+                            street kids, corpo refugees, anyone who'd been crushed by the machine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="triad-section">
+        <div class="container">
+            <h2 class="section-header">// THE_TRIAD</h2>
+            <p class="section-subtitle">The three who lead. The three who see.</p>
+
+            <div class="triad-grid">
+                <div class="triad-card zero-card">
+                    <div class="card-status status-missing">MISSING</div>
+                    <div class="card-avatar">
+                        <div class="avatar-placeholder">
+                            <span class="avatar-icon">&#128065;</span>
+                        </div>
+                    </div>
+                    <h3 class="card-name">ZERO</h3>
+                    <p class="card-real">Marcus Chen</p>
+                    <div class="card-divider"></div>
+                    <p class="card-role">Founder // Legend</p>
+                    <p class="card-quote">"They made me a ghost. Now I haunt their dreams."</p>
+                    <ul class="card-details">
+                        <li><span class="label">Specialty:</span> ICE breaking, corporate infiltration</li>
+                        <li><span class="label">Cyberware:</span> Custom optic implants</li>
+                        <li><span class="label">Status:</span> Missing since 2076</li>
+                        <li><span class="label">Bounty:</span> ₵$1,000,000 (Arasaka black budget)</li>
+                    </ul>
+                </div>
+
+                <div class="triad-card glitch-card">
+                    <div class="card-status status-active">ACTIVE</div>
+                    <div class="card-avatar">
+                        <div class="avatar-placeholder">
+                            <span class="avatar-icon">&#9889;</span>
+                        </div>
+                    </div>
+                    <h3 class="card-name">GLITCH</h3>
+                    <p class="card-real">[REDACTED]</p>
+                    <div class="card-divider"></div>
+                    <p class="card-role">Field Commander</p>
+                    <p class="card-quote">"You join us, you're family. You betray family, I end you. Simple."</p>
+                    <ul class="card-details">
+                        <li><span class="label">Specialty:</span> Combat netrunning, daemon deployment</li>
+                        <li><span class="label">Cyberware:</span> Neural processor, subdermal armor</li>
+                        <li><span class="label">Background:</span> Ex-Tyger Claw (defected)</li>
+                        <li><span class="label">Bounty:</span> ₵$250,000 (Maelstrom contract)</li>
+                    </ul>
+                </div>
+
+                <div class="triad-card moon-card">
+                    <div class="card-status status-active">ACTIVE</div>
+                    <div class="card-avatar">
+                        <div class="avatar-placeholder">
+                            <span class="avatar-icon">&#127769;</span>
+                        </div>
+                    </div>
+                    <h3 class="card-name">MOONSHADOW</h3>
+                    <p class="card-real">Yuki Tanaka</p>
+                    <div class="card-divider"></div>
+                    <p class="card-role">Tech // Intel // Heart</p>
+                    <p class="card-quote">"Every kid on the street is someone's child. We're the ones who remember."</p>
+                    <ul class="card-details">
+                        <li><span class="label">Specialty:</span> Signal encryption, safe house network</li>
+                        <li><span class="label">Cyberware:</span> Audio processors, memory implants</li>
+                        <li><span class="label">Background:</span> Ex-Arasaka accountant</li>
+                        <li><span class="label">Bounty:</span> ₵$100,000 (Arasaka contract)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="members-section">
+        <div class="container">
+            <h2 class="section-header">// ACTIVE_RUNNERS</h2>
+
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-handle">ECHO</div>
+                    <div class="member-role">Deep Net Diver</div>
+                    <div class="member-desc">
+                        Made contact with something beyond the Blackwall.
+                        Now speaks in code and riddles. Some say Echo is more AI than human.
+                    </div>
+                    <div class="member-quote">"They're singing. Do you hear them? The ones behind the wall."</div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-handle">RAZOR</div>
+                    <div class="member-role">Street Operator</div>
+                    <div class="member-desc">
+                        Found at 16, running from Scavengers. Now one of the best hitters in Watson.
+                        Doesn't hack — cuts. Works just as well.
+                    </div>
+                    <div class="member-quote">"I don't hack. I cut. Works just as well."</div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-handle">STATIC</div>
+                    <div class="member-role">Communications</div>
+                    <div class="member-desc">
+                        Parents were journalists killed investigating Arasaka.
+                        Inherited their notes. Joined ZC to finish their work.
+                    </div>
+                    <div class="member-quote">"The truth is out there. We just have to broadcast it loud enough."</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lost-section">
+        <div class="container">
+            <h2 class="section-header">// THE_LOST</h2>
+            <p class="section-subtitle">Gone but not forgotten. We remember.</p>
+
+            <div class="memorial-wall">
+                <div class="memorial-card">
+                    <div class="memorial-status status-mia">MIA</div>
+                    <h3>SWITCH</h3>
+                    <p class="memorial-date">Lost: Night Market, 2075</p>
+                    <p class="memorial-text">
+                        Captured by Maelstrom. Presumed cyberpsychotically converted.
+                        We're still looking. We always look.
+                    </p>
+                    <div class="memorial-candle"></div>
+                </div>
+
+                <div class="memorial-card">
+                    <div class="memorial-status status-mia">MIA</div>
+                    <h3>NEON</h3>
+                    <p class="memorial-date">Lost: Night Market, 2075</p>
+                    <p class="memorial-text">
+                        Switch's partner. Last transmission: <em>"Tell my sister I—"</em>
+                        Signal lost. Her sister still searches.
+                    </p>
+                    <div class="memorial-candle"></div>
+                </div>
+
+                <div class="memorial-card">
+                    <div class="memorial-status status-kia">KIA</div>
+                    <h3>DEADMAN</h3>
+                    <p class="memorial-date">Fallen: Arasaka Heist, 2076</p>
+                    <p class="memorial-text">
+                        Took 6 corpo security with him. His handle is carved
+                        into our main terminal. We run in his memory.
+                    </p>
+                    <div class="memorial-candle lit"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="enemies-section">
+        <div class="container">
+            <h2 class="section-header">// ENEMIES</h2>
+            <p class="section-subtitle">Those who hunt us. Those we hunt.</p>
+
+            <div class="enemies-list">
+                <div class="enemy-row priority">
+                    <div class="enemy-rank">01</div>
+                    <div class="enemy-info">
+                        <h3>ARASAKA CORPORATION</h3>
+                        <p>The ultimate enemy. Human experimentation. Covered up Zero's "death."
+                           Every data heist, every leak — it's all leading to them.</p>
+                    </div>
+                    <div class="enemy-threat threat-extreme">EXTREME</div>
+                </div>
+
+                <div class="enemy-row priority">
+                    <div class="enemy-rank">02</div>
+                    <div class="enemy-info">
+                        <h3>MAELSTROM</h3>
+                        <p>Blood feud since Night Market. Royce has a bounty on ZC leadership.
+                           They took Switch and Neon. We will make them pay.</p>
+                    </div>
+                    <div class="enemy-threat threat-extreme">EXTREME</div>
+                </div>
+
+                <div class="enemy-row">
+                    <div class="enemy-rank">03</div>
+                    <div class="enemy-info">
+                        <h3>NETWATCH</h3>
+                        <p>"Protecting" the Blackwall. Hunting ZC for "violations."
+                           They fear what we might find beyond the wall.</p>
+                    </div>
+                    <div class="enemy-threat threat-high">HIGH</div>
+                </div>
+
+                <div class="enemy-row">
+                    <div class="enemy-rank">04</div>
+                    <div class="enemy-info">
+                        <h3>SCAVENGERS</h3>
+                        <p>Traffickers. Organ harvesters. We hunt them on sight.
+                           Every rescue is a victory. Every body is a failure.</p>
+                    </div>
+                    <div class="enemy-threat threat-medium">MEDIUM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="allies-section">
+        <div class="container">
+            <h2 class="section-header">// ALLIES</h2>
+            <p class="section-subtitle">Friends in the darkness.</p>
+
+            <div class="allies-grid">
+                <div class="ally-card">
+                    <h3>THE MOX</h3>
+                    <p>Protected Lizzie's Bar systems. They provide safe houses when the heat's on.
+                       Shared enemies make strange bedfellows.</p>
+                </div>
+                <div class="ally-card">
+                    <h3>ALDECALDOS</h3>
+                    <p>Nomads respect our anti-corporate stance. Trade routes open.
+                       They move people. We move data.</p>
+                </div>
+                <div class="ally-card">
+                    <h3>VOODOO BOYS</h3>
+                    <p>Cautious allies. Share netrunning knowledge, but we refuse to breach
+                       the Blackwall blindly. Different methods, similar goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-tagline">ZERO_COOL // <span class="glitch-small" data-text="NIGHT_CITY_LEGIS">NIGHT_CITY_LEGIS</span></p>
+            <p class="footer-location">Operating in: Watson // Westbrook // Heywood // Santo Domingo // Pacifica</p>
+            <p class="footer-disclaimer">This ain't a game. This is survival.</p>
+            <p class="footer-copyright">&copy; 2077 ZERO_COOL Collective | Stay sharp. Stay hidden.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="lore-script.js"></script>
+</body>
+</html>

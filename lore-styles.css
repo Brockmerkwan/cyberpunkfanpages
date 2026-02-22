@@ -1,0 +1,593 @@
+/* ===== LORE PAGE STYLES ===== */
+
+/* Hero Section */
+.lore-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(180deg, #000 0%, #0a0a0f 100%);
+    border-bottom: 1px solid var(--neon-purple);
+}
+
+.lore-title {
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 40px var(--neon-cyan);
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.lore-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-dim);
+    letter-spacing: 3px;
+    margin-top: 1rem;
+}
+
+/* Section Headers */
+.section-header {
+    font-size: 2rem;
+    color: var(--neon-cyan);
+    text-shadow: var(--neon-glow-cyan);
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: var(--text-dim);
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+}
+
+/* Origin Section */
+.origin-section {
+    background: var(--bg-dark);
+    border-bottom: 1px solid rgba(188, 19, 254, 0.2);
+}
+
+.origin-grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.symbol-display {
+    background: var(--bg-panel);
+    border: 2px solid var(--neon-purple);
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(188, 19, 254, 0.3);
+}
+
+.zc-symbol {
+    width: 200px;
+    height: 200px;
+}
+
+.eye {
+    filter: drop-shadow(0 0 10px #00ffff);
+}
+
+.blackwall-ring {
+    filter: drop-shadow(0 0 10px #bc13fe);
+}
+
+.symbol-meaning {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    font-style: italic;
+}
+
+.story-content p {
+    color: var(--text-dim);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.highlight-first {
+    color: var(--text-main);
+    font-size: 1.1rem;
+}
+
+.highlight-first .glitch-text {
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink);
+}
+
+.terminal-message {
+    background: var(--bg-black);
+    border: 1px solid var(--terminal-green);
+    padding: 1.5rem;
+    font-family: 'Courier New', monospace;
+    color: var(--terminal-green);
+    margin: 2rem 0;
+    line-height: 2;
+    box-shadow: 0 0 20px rgba(10, 255, 10, 0.2);
+}
+
+/* Triad Section */
+.triad-section {
+    background: var(--bg-black);
+    padding: 5rem 2rem;
+}
+
+.triad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.triad-card {
+    background: var(--bg-panel);
+    border: 1px solid rgba(188, 19, 254, 0.3);
+    padding: 2rem;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.triad-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.card-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    letter-spacing: 1px;
+}
+
+.status-missing {
+    background: rgba(255, 0, 60, 0.2);
+    color: var(--neon-pink);
+    border: 1px solid var(--neon-pink);
+}
+
+.status-active {
+    background: rgba(10, 255, 10, 0.2);
+    color: var(--terminal-green);
+    border: 1px solid var(--terminal-green);
+}
+
+.card-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.avatar-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(188, 19, 254, 0.5);
+}
+
+.avatar-icon {
+    font-size: 3rem;
+}
+
+.card-name {
+    font-size: 1.8rem;
+    color: var(--neon-cyan);
+    text-align: center;
+    text-shadow: var(--neon-glow-cyan);
+    letter-spacing: 3px;
+}
+
+.card-real {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.card-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--neon-purple), transparent);
+    margin: 1rem 0;
+}
+
+.card-role {
+    text-align: center;
+    color: var(--neon-pink);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.card-quote {
+    text-align: center;
+    color: var(--text-main);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 2px solid var(--neon-purple);
+}
+
+.card-details {
+    list-style: none;
+    font-size: 0.85rem;
+}
+
+.card-details li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-details .label {
+    color: var(--text-dim);
+}
+
+/* Members Section */
+.members-section {
+    background: var(--bg-dark);
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.member-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    padding: 2rem;
+    transition: all 0.3s;
+}
+
+.member-card:hover {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.member-handle {
+    font-size: 1.5rem;
+    color: var(--neon-cyan);
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: var(--neon-purple);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.member-desc {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.member-quote {
+    color: var(--text-main);
+    font-style: italic;
+    font-size: 0.85rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--neon-cyan);
+}
+
+/* Lost Section */
+.lost-section {
+    background: var(--bg-black);
+}
+
+.memorial-wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.memorial-card {
+    background: var(--bg-panel);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.memorial-status {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.status-mia {
+    background: rgba(255, 170, 0, 0.2);
+    color: var(--amber);
+    border: 1px solid var(--amber);
+}
+
+.status-kia {
+    background: rgba(255, 0, 60, 0.2);
+    color: var(--neon-pink);
+    border: 1px solid var(--neon-pink);
+}
+
+.memorial-card h3 {
+    color: var(--text-main);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.memorial-date {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.memorial-text {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.memorial-text em {
+    color: var(--neon-pink);
+    font-style: italic;
+}
+
+.memorial-candle {
+    width: 20px;
+    height: 40px;
+    background: #333;
+    margin: 1.5rem auto 0;
+    position: relative;
+    border-radius: 3px;
+}
+
+.memorial-candle::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 15px;
+    background: transparent;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.memorial-candle.lit::before {
+    background: linear-gradient(to top, #ff6600, #ffcc00, #ffffff);
+    box-shadow: 0 0 20px #ff6600, 0 0 40px #ffcc00;
+    animation: flicker 0.5s infinite;
+}
+
+@keyframes flicker {
+    0%, 100% { transform: translateX(-50%) scale(1); opacity: 1; }
+    50% { transform: translateX(-50%) scale(1.1); opacity: 0.8; }
+}
+
+/* Enemies Section */
+.enemies-section {
+    background: var(--bg-dark);
+    border-top: 1px solid rgba(255, 0, 60, 0.2);
+}
+
+.enemies-list {
+    margin-top: 2rem;
+}
+
+.enemy-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 120px;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--bg-panel);
+    border: 1px solid rgba(255, 0, 60, 0.2);
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+}
+
+.enemy-row:hover {
+    border-color: var(--neon-pink);
+    box-shadow: 0 0 20px rgba(255, 0, 60, 0.3);
+}
+
+.enemy-row.priority {
+    border-color: var(--neon-pink);
+    background: linear-gradient(90deg, rgba(255, 0, 60, 0.1), transparent);
+}
+
+.enemy-rank {
+    font-size: 1.5rem;
+    color: var(--neon-pink);
+    font-weight: bold;
+    text-align: center;
+}
+
+.enemy-info h3 {
+    color: var(--text-main);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.enemy-info p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.enemy-threat {
+    text-align: right;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+}
+
+.threat-extreme {
+    color: var(--neon-pink);
+    border-color: var(--neon-pink);
+    background: rgba(255, 0, 60, 0.1);
+}
+
+.threat-high {
+    color: var(--amber);
+    border-color: var(--amber);
+    background: rgba(255, 170, 0, 0.1);
+}
+
+.threat-medium {
+    color: var(--neon-cyan);
+    border-color: var(--neon-cyan);
+    background: rgba(0, 255, 255, 0.1);
+}
+
+/* Allies Section */
+.allies-section {
+    background: var(--bg-black);
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.allies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.ally-card {
+    background: var(--bg-panel);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    padding: 2rem;
+    transition: all 0.3s;
+}
+
+.ally-card:hover {
+    border-color: var(--terminal-green);
+    box-shadow: 0 0 20px rgba(10, 255, 10, 0.2);
+}
+
+.ally-card h3 {
+    color: var(--terminal-green);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.ally-card p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* Glitch Text */
+.glitch-text {
+    position: relative;
+    display: inline-block;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch-text::before {
+    animation: glitch-1 0.3s infinite;
+    color: var(--neon-cyan);
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+
+.glitch-text::after {
+    animation: glitch-2 0.3s infinite;
+    color: var(--neon-pink);
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .origin-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .lore-title {
+        font-size: 3rem;
+    }
+
+    .enemy-row {
+        grid-template-columns: 40px 1fr;
+    }
+
+    .enemy-threat {
+        grid-column: 2;
+        text-align: left;
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.98);
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        display: none;
+        border-bottom: 1px solid var(--neon-purple);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a.active {
+        color: var(--neon-cyan);
+    }
+}
